@@ -46,9 +46,9 @@ if (isset ($_SESSION["Loggedin"])) {
                         <a href="./index.php">
                             <img src="./Assets/logo.png" alt="World of warcraft" class="logo" /></a>
                     </li>
-                    <li><a href="./bdd-mount.php">Notre équipe</a></li>
-                    <li><a href="./equipements.php">Formulaire</a></li>
-                    <li><a href="./equipements.php">Actualités</a></li>
+                    <li><a href="./equipements.php">Notre équipe</a></li>
+                    <li><a href="./bdd-mount.php">Formulaire</a></li>
+                    <li><a href="./">Actualités</a></li>
                     <li>
                         <?php
                         if (isset ($_SESSION['Loggedin'])) {
@@ -78,11 +78,10 @@ if (isset ($_SESSION["Loggedin"])) {
                 <div class="article1">
                     <div class="articleText">
                         <h3>
-                            Découvrez le comptoir !
+                            Cyberattaque Massive : Des Hackers utilisent des Chatbots pour Infiltrer les Réseaux
+                            Sociaux
                         </h3>
                         <p>
-                            "Cyberattaque Massive : Des Hackers utilisent des Chatbots pour Infiltrer les Réseaux
-                            Sociaux"
                             Des rapports révèlent qu'une cyberattaque d'envergure mondiale a été lancée par des hackers
                             utilisant des chatbots sophistiqués pour infiltrer les réseaux sociaux. Ces chatbots
                             malveillants ciblent les profils des utilisateurs, collectant des données sensibles et
@@ -98,13 +97,14 @@ if (isset ($_SESSION["Loggedin"])) {
 
                 <div class="article1">
                     <div class="articleText">
-                        <h3>Une nouvelle monture au Rêve d'émeraude</h3>
+                        <h3>Fuite de Données Géante : Des Pirates Informatiques s'Emparent des Informations de Cartes
+                            Bancaires de Millions de Clients"</h3>
                         <p>
-                            La monture Rênes du cerf onirique ravivé est vendue auprès du PnJ Talisa Murmurante
-                            (49.80,
-                            62.20) au Campement central du Rêve d'émeraude. Cette monture peut être échangée contre
-                            1
-                            Fleur de graine. [...]
+                            Une fuite de données massive a été signalée, avec des pirates informatiques ayant réussi à
+                            s'emparer des informations de cartes bancaires de millions de clients dans le monde entier.
+                            Les experts en sécurité craignent que ces données ne soient utilisées à des fins de fraude
+                            financière à grande échelle. Les institutions financières sont en état d'alerte maximale,
+                            travaillant rapidement pour identifier et sécuriser les vulnérabilités dans leurs systèmes.
                         </p>
                         <button class="read" type="button">Lire la suite</button>
                     </div>
@@ -114,12 +114,17 @@ if (isset ($_SESSION["Loggedin"])) {
 
                 <div class="article1">
                     <div class="articleText">
-                        <h3>Changements à venir pour les donjons de la saison 4 de Dragonflight</h3>
+                        <h3>Ransomware Dévastateur : Une Entreprise Multinationale Paralysée par une Attaque de
+                            Ransomware Inédite</h3>
                         <p>
-                            La saison 4 de Dragonflight apporte toute une gamme de changements, notamment des
-                            ajustements concernant les donjons, leur progression et leurs récompenses (et de
-                            nouvelles
-                            montures !)
+                            Une entreprise multinationale de premier plan a été la cible d'une attaque de ransomware
+                            sans précédent, paralysant complètement ses opérations. Les pirates informatiques ont
+                            chiffré les données cruciales de l'entreprise et exigent une somme exorbitante en bitcoin
+                            pour leur restitution. Les experts en sécurité sont sur le qui-vive, tentant de déterminer
+                            l'origine de l'attaque et de mettre en place des mesures de récupération pour limiter les
+                            dommages.
+
+
                         </p>
                         <button class="read" type="button">Lire la suite</button>
                     </div>
