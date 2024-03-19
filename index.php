@@ -135,21 +135,19 @@ if (isset ($_SESSION["Loggedin"])) {
 
             <aside>
                 <div class="aside1">
-                    <h3>L'équipement du jour</h3>
+                    <h3>News du jour</h3>
                     <p>
-                        Fyralath le Pourfendeur de rêve, un légendaire pas si facile à obtenir ! Rendez-vous à
-                        Amirdrassil, l'Espoir du Rêve
+                        Un mail teste les réflexes des gendarmes en matière de cybersécurité, 10 % échouent
                     </p>
-                    <img src="./Assets/equipement1.jpg" alt="Equipement" class="nain" />
+                    <img src="./Assets/news1.jpg" alt="Equipement" class="nain" />
                     <button class="button-aside" type="button">Découvrir</button>
                 </div>
                 <div class="aside1">
-                    <h3>L'équipement du jour</h3>
+                    <h3>News du jour</h3>
                     <p>
-                        Aujourd'hui, découvrez le casque de nain à obtenir dans les
-                        cavernes des lamentations
+                        Cybersécurité : l’armée française s’entraîne, et le dit en message codé sur X
                     </p>
-                    <img src="./Assets/casque-nain.jpg" alt="casque nain" class="nain" />
+                    <img src="./Assets/news2.jpg" alt="casque nain" class="nain" />
                     <button class="button-aside" type="button">Découvrir</button>
                 </div>
             </aside>
@@ -165,12 +163,12 @@ if (isset ($_SESSION["Loggedin"])) {
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Page d'accueil</a></li>
-                <li class="list-inline-item"><a href="#">L'équipe WoW Armory</a></li>
+                <li class="list-inline-item"><a href="./equipements.php">L'équipe Atara</a></li>
                 <li class="list-inline-item"><a href="#">Paramètres et politique de cookies</a></li>
                 <li class="list-inline-item"><a href="#">Mentions légales</a></li>
                 <li class="list-inline-item"><a href="#">Confidentialité en ligne</a></li>
             </ul>
-            <p class="copyright">WoW Armory © 2024</p>
+            <p class="copyright">Atara © 2024</p>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
