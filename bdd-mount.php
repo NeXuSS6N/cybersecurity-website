@@ -89,6 +89,9 @@ include "auth-mount-equip.php";
 
             </nav>
 
+            <div>
+                <h2 class="filter">Formulaire</h2>
+            </div>
 
 
 
@@ -104,6 +107,7 @@ include "auth-mount-equip.php";
 
                     <label for="nombre">Nombre d'employés</label>
                     <select name="nombre">
+                        <option value=""></option>
                         <option value="1-19">1-19</option>
                         <option value="20-99">20-99</option>
                         <option value="100-999">100-999</option>
@@ -118,7 +122,7 @@ include "auth-mount-equip.php";
                         <option value="Non">Non</option>
                     </select>
 
-                    <?php if ((isset ($_POST["submit"])) && $itdedie === "Non") {
+                    <?php if ((!empty ($_POST["itdedie"]))) {
                         echo "coucou";
                     } ?>
 
@@ -149,6 +153,172 @@ include "auth-mount-equip.php";
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
+
+                    <label for="exterieur">Existe t-il une liste des personnes extérieures qui pénètrent physiquement
+                        dans
+                        vos locaux ? </label>
+                    <select name="exterieur">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="sensible">Existe t’il une sensibilisation des utilisateurs à la sécurité informatique
+                        et à la confidentialité ?</label>
+                    <select name="sensible">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="phishing">Avez-vous déjà réalisé une campagne de phishing au sein de votre organisation
+                        ? </label>
+                    <select name="phishing">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="certif">Avez-vous des certifications ? </label>
+                    <select name="certif">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="coffre">Utilisez-vous un coffre-fort de mots de passe ? </label>
+                    <select name="coffre">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="service">Les mots de passes administrateurs sont-ils différents pour chaque service ?
+                    </label>
+                    <select name="service">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="service">Les mots de passes administrateurs sont-ils différents pour chaque service ?
+                    </label>
+                    <select name="service">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="laps">Si vous êtes sous Windows, utiliser-vous LAPS ?
+                    </label>
+                    <select name="laps">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="compte">Lors du départ d’un salarié, son compte utilisateur est-il désactivé ?
+                    </label>
+                    <select name="compte">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="data">Pendant combien de temps gardez-vous leurs données après le départ ?
+                    </label>
+                    <select name="data">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                </div>
+
+                <!-- UTILISATEURS / HARDWARE / SOFTWARE / RESEAU  -->
+                <div class="filter">
+
+                    <label for="acces">Avez-vous un contrôle d’accès à l’entrée des locaux ?
+                    </label>
+                    <select name="acces">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="controle">Avez-vous un contrôle de sécurité ?
+                    </label>
+                    <select name="controle">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="firewall"> Y’a t’il un firewall ?
+                    </label>
+                    <select name="firewall">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="inventaire"> Y’a t’il un inventaire, tenu à jour, du matériel de l’entreprise ?
+                    </label>
+                    <select name="inventaire">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+
 
 
 
