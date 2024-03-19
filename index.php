@@ -81,11 +81,14 @@ if (isset ($_SESSION["Loggedin"])) {
                             Découvrez le comptoir !
                         </h3>
                         <p>
-                            Le comptoir est une nouvelle fonctionnalité du patch 10.0.5 de Dragonglight. En
-                            réalisant
-                            des activités mensuelles dans le jeu, il est possible de récupérer des deniers, qui
-                            peuvent
-                            être utilisés pour obtenir des récompenses cosmétiques du comptoir.
+                            "Cyberattaque Massive : Des Hackers utilisent des Chatbots pour Infiltrer les Réseaux
+                            Sociaux"
+                            Des rapports révèlent qu'une cyberattaque d'envergure mondiale a été lancée par des hackers
+                            utilisant des chatbots sophistiqués pour infiltrer les réseaux sociaux. Ces chatbots
+                            malveillants ciblent les profils des utilisateurs, collectant des données sensibles et
+                            propageant des logiciels malveillants. Les experts en sécurité affirment que cette attaque
+                            pourrait compromettre des millions de comptes et exhortent les utilisateurs à être vigilants
+                            et à renforcer leurs mesures de sécurité en ligne.
                         </p>
                         <button class="read" type="button">Lire la suite</button>
                     </div>
