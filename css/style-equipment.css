@@ -20,7 +20,7 @@ body {
 }
 
 .imgHeaderMount {
-  background-image: url(../Assets/backgroundaccueil.jpg);
+  background-image: url(../Assets/background-form.jpg);
   background-size: cover;
   background-position: top;
   height:auto;
@@ -148,53 +148,58 @@ border-radius: 6px;
 /*----------------------------------------Menu de filtres---------------------------------------------------------*/
 
 .formMount {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3%;
-    flex-wrap:wrap;
+    display:flex; 
+    /* flex-direction: row;
+   justify-content:flex-start; */
+   /* align-items: end; */
+   width:auto;
+    height:100%;
+    /* padding-bottom: 3%; */
+    /* flex-wrap:wrap;*/
 
 }
 
 .filter {
+  background-color:#ffffff;
+  opacity: 0.9;
     display:flex;
+    flex:1;
     flex-direction: column;
-    align-items:center;
-    padding: 2%;
-    flex-wrap:wrap;
+    
+    /* padding: 2%;*/ 
+    margin:auto;
+    /* flex-wrap:wrap; */
 
     
 }
 
-.filter2 {
+/* .filter2 {
     display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
+    flex-direction: row;
+    flex:1;
     align-items:center;
     padding: 2%;
-}
+} */
 
  select {
-    min-width: 300px;
+    min-width: auto;
     padding-left:20%;
     padding:1%;
     opacity: 0.8;
     margin:5%;
-    padding:5%;
-    flex-wrap: wrap;
+    /* padding:5%; */
     /* color:white; */
 }
 
 label {
-    color:white;
+    color:black;
     font-size: 1.5em;
     padding-top:1%;
 }
 
 input[type=submit] {
-    min-width: 10em;
-    height: 50px;
+    min-width: 15em;
+    height: 2em;
     cursor: pointer;
     background:black;
     border: 1px solid #000000;
