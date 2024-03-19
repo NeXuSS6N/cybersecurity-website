@@ -17,7 +17,7 @@ if (isset ($_SESSION["Loggedin"])) {
 <head>
     <link rel="icon" type="image/x-icon" href="./Assets/icon.png" />
     <meta charset="utf-8" />
-    <title>WoW Collection</title>
+    <title>Atara</title>
 
     <link rel="stylesheet" href="./css/style.css" />
     <script src="script.js"></script>
@@ -43,11 +43,12 @@ if (isset ($_SESSION["Loggedin"])) {
             <nav id="menus">
                 <ul>
                     <li>
-                        <a href="./wow-armory.php">
+                        <a href="./index.php">
                             <img src="./Assets/logo.png" alt="World of warcraft" class="logo" /></a>
                     </li>
-                    <li><a href="./bdd-mount.php">Montures </a></li>
-                    <li><a href="./equipements.php">Equipements</a></li>
+                    <li><a href="./bdd-mount.php">Notre équipe</a></li>
+                    <li><a href="./equipements.php">Formulaire</a></li>
+                    <li><a href="./equipements.php">Actualités</a></li>
                     <li>
                         <?php
                         if (isset ($_SESSION['Loggedin'])) {
