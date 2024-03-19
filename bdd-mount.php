@@ -7,9 +7,9 @@ $password = '';
 /* On ferme la connexion */
 $conn = null;
 
-if(isset($_SESSION["Loggedin"])){
+if (isset ($_SESSION["Loggedin"])) {
     $userpseudo = $_SESSION['Loggedin'];
-}else{
+} else {
     session_destroy();
 }
 include "auth-mount-equip.php";
@@ -22,7 +22,7 @@ include "auth-mount-equip.php";
 
     <link rel="icon" type="image/x-icon" href="./Assets/icon.png" />
     <meta charset="utf-8" />
-    <title>WoW Collection</title>
+    <title>Atara</title>
 
 
     <!-- Footer -->
@@ -61,23 +61,24 @@ include "auth-mount-equip.php";
             <nav id="menus">
                 <ul>
                     <li>
-                        <a href="./wow-armory.php">
+                        <a href="./index.php">
                             <img src="./Assets/logo.png" alt="World of warcraft" class="logo" /></a>
                     </li>
-                    <li><a href="./bdd-mount.php">Montures </a></li>
-                    <li><a href="./equipements.php">Equipements</a></li>
+                    <li><a href="./bdd-mount.php">Notre équipe</a></li>
+                    <li><a href="./equipements.php">Formulaire</a></li>
+                    <li><a href="./equipements.php">Actualités</a></li>
                     <li>
-                        <?php 
-                            if(isset($_SESSION['Loggedin'])){
-                                echo '<a href="./MonCompte.php">' .$userpseudo.'</a>';
-                            }else{
-                                echo '<a href="./login.php">Mon compte</button></a>';
-                            }
+                        <?php
+                        if (isset ($_SESSION['Loggedin'])) {
+                            echo '<a href="./MonCompte.php">' . $userpseudo . '</a>';
+                        } else {
+                            echo '<a href="./login.php">Mon compte</button></a>';
+                        }
                         ?>
                     </li>
                     <li>
-                        <?php 
-                        if(isset($_SESSION['Loggedin'])){
+                        <?php
+                        if (isset ($_SESSION['Loggedin'])) {
                             echo '<a href="./PHP/Login/logout.php"><button class="login" type="button">Logout</button></a>';
                         } else {
                             echo '<a href="./login.php"><button class="login" type="button">Login</button></a>';
@@ -88,6 +89,9 @@ include "auth-mount-equip.php";
 
             </nav>
 
+            <div>
+                <h2 class="filter">Formulaire</h2>
+            </div>
 
 
 
@@ -101,73 +105,222 @@ include "auth-mount-equip.php";
 
                 <div class="filter">
 
-                    <label for="type">Type</label>
-                    <select name="type">
-                        <option value="">Type</option>
-                        <option value="Aquatique">Aquatique</option>
-                        <option value="Volante">Volante</option>
-                        <option value="Terrestre">Terrestre</option>
+                    <label for="nombre">Nombre d'employés</label>
+                    <select name="nombre">
+                        <option value=""></option>
+                        <option value="1-19">1-19</option>
+                        <option value="20-99">20-99</option>
+                        <option value="100-999">100-999</option>
+                        <option value="1000+">1000+</option>
                     </select>
 
 
-                    <label for="difficulty">Difficulté</label>
-                    <select name="difficulty">
-                        <option value="">Difficulté</option>
-                        <option value="Facile">Facile</option>
-                        <option value="Moyen">Moyen</option>
-                        <option value="Difficile">Difficile</option>
-                        <option value="Argent réel">Argent réel</option>
-
+                    <label for="itdedie">Avez-vous une équipe IT dédiée?</label>
+                    <select name="itdedie">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
                     </select>
 
-                    <label for="source">Source</label>
-                    <select name="source">
-                        <option value="">Source</option>
-                        <option value="Anniversaire de WoW">Anniversaire de WoW</option>
-                        <option value="Métiers">Métier</option>
-                        <option value="Boutique">Boutique</option>
-                        <option value="Butin">Butin</option>
-                        <option value="Cartes à collectionner">Collection de cartes</option>
-                        <option value="Comptoir">Comptoir</option>
-                        <option value="Evenèments mondiaux">Evènements mondiaux</option>
-                        <option value="Divers">Autres</option>
-                        <option value="Exploration des îles">Exploration des îles</option>
-                        <option value="Hauts-faits">Hauts-faits</option>
-                        <option value="Non implémenté">Non implémenté</option>
-                        <option value="Promotion Blizzard">Blizzard promotion</option>
-                        <option value="PvP côté">PvP</option>
-                        <option value="Quête">Quêtes</option>
-                        <option value="Retiré">Retiré</option>
-                        <option value="Secret">Secrets</option>
-                        <option value="Vendeur">Vendeur</option>
+                    <?php if ((!empty ($_POST["itdedie"]))) {
+                        echo "coucou";
+                    } ?>
 
+                    <label for="mdp">Avez-vous une base de données de mots de passe commune au service IT ? </label>
+                    <select name="mdp">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
                     </select>
+
+                    <label for="rssi">Existe-t-il un RSSI (désigné ou recruté) ? </label>
+                    <select name="rssi">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="cyberattaque">Si non, avez-vous désigné un référent en cas de cyberattaque ? </label>
+                    <select name="cyberattaque">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="charte">Y’a t’il une charte de sécurité informatique ? </label>
+                    <select name="charte">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="exterieur">Existe t-il une liste des personnes extérieures qui pénètrent physiquement
+                        dans
+                        vos locaux ? </label>
+                    <select name="exterieur">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="sensible">Existe t’il une sensibilisation des utilisateurs à la sécurité informatique
+                        et à la confidentialité ?</label>
+                    <select name="sensible">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="phishing">Avez-vous déjà réalisé une campagne de phishing au sein de votre organisation
+                        ? </label>
+                    <select name="phishing">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="certif">Avez-vous des certifications ? </label>
+                    <select name="certif">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="coffre">Utilisez-vous un coffre-fort de mots de passe ? </label>
+                    <select name="coffre">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="service">Les mots de passes administrateurs sont-ils différents pour chaque service ?
+                    </label>
+                    <select name="service">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="service">Les mots de passes administrateurs sont-ils différents pour chaque service ?
+                    </label>
+                    <select name="service">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="laps">Si vous êtes sous Windows, utiliser-vous LAPS ?
+                    </label>
+                    <select name="laps">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="compte">Lors du départ d’un salarié, son compte utilisateur est-il désactivé ?
+                    </label>
+                    <select name="compte">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="data">Pendant combien de temps gardez-vous leurs données après le départ ?
+                    </label>
+                    <select name="data">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
                 </div>
 
-                <div class="filter2">
+                <!-- UTILISATEURS / HARDWARE / SOFTWARE / RESEAU  -->
+                <div class="filter">
 
-                    <label for="extension">Extensions</label>
-                    <select name="extension">
-                        <option value="">Extensions</option>
-                        <option value="Battle for Azeroth">Battle for Azeroth</option>
-                        <option value="Burning Crusade">Burning Crusade</option>
-                        <option value="Cataclysm">Cataclysm</option>
-                        <option value="Dragonflight">Dragonflight</option>
-                        <option value="Légion">Légion</option>
-                        <option value="Mists of Pandaria">Mists of Pandaria</option>
-                        <option value="Shadowlands">Shadowlands</option>
-                        <option value="Warlords of Draenor">Warlords of Draenor</option>
-                        <option value="WoW Vanilla">WoW Vanilla</option>
-                        <option value="Wrath of the Lich King">Wrath of the Lich King</option>
+                    <label for="acces">Avez-vous un contrôle d’accès à l’entrée des locaux ?
+                    </label>
+                    <select name="acces">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
                     </select>
 
-                    <label for="faction">Faction</label>
-                    <select name="faction">
-                        <option value="">Faction</option>
-                        <option value="Alliance">Alliance</option>
-                        <option value="Horde">Horde</option>
-                        <option value="Neutre">Neutre</option>
+                    <label for="controle">Avez-vous un contrôle de sécurité ?
+                    </label>
+                    <select name="controle">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
                     </select>
+
+                    <label for="firewall"> Y’a t’il un firewall ?
+                    </label>
+                    <select name="firewall">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="inventaire"> Y’a t’il un inventaire, tenu à jour, du matériel de l’entreprise ?
+                    </label>
+                    <select name="inventaire">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    </label>
+                    <select name="renew">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+
+
+
 
                     <div>
                         <input type="submit" value="Rechercher" name="submit">
@@ -216,64 +369,58 @@ include "auth-mount-equip.php";
         // Godefroy
         // Step 1
         // Pour chaque paramètre, on peut créé un boolean correspondant
-        $difficulty = $_POST["difficulty"];
-        $haveDifficulty = false;
+        $itdedie = $_POST["itdedie"];
+        // $haveDifficulty = false;
         $source = $_POST["source"];
-        $haveSource = false;
+        // $haveSource = false;
         $extension = $_POST["extension"];
-        $haveExtension = false;
+        // $haveExtension = false;
         $faction = $_POST["faction"];
-        $haveFaction = false;
+        // $haveFaction = false;
         $type = $_POST["type"];
-        $haveType = false;
+        // $haveType = false;
         $i = 0;
 
 
-        $sqlQuery = 'SELECT * FROM t_monture 
-            INNER JOIN tj_m_appartient_fa_mafa on tj_m_appartient_fa_mafa.M_Id=t_monture.M_Id 
-            INNER JOIN t_m_faction_mfa on t_m_faction_mfa.MFA_Id=tj_m_appartient_fa_mafa.MFA_Id 
-            INNER JOIN t_m_difficulte_mdi on t_m_difficulte_mdi.MDI_Id=t_monture.MDI_Id 
-            INNER JOIN t_moyen_obtention_mo on t_moyen_obtention_mo.MO_Id=t_monture.MO_Id 
-            INNER JOIN t_m_extensions_me on t_m_extensions_me.ME_Id=t_monture.ME_Id
-            INNER JOIN t_m_type_mty on t_m_type_mty.MTY_Id=t_monture.MTY_Id';
+        $sqlQuery = 'INSERT INTO t_joueur (J_Id, J_ADR, J_MDP, J_User) VALUES (?, ?, ?, ?)';
 
 
         // Godefroy
         // Step 2
         // On passe le boolean à True pour chaque critère utilisé.
-        if (!empty ($_POST['difficulty'])) // si une region à été choisie
-        {
-            $where[] = ' MDI_Nom = ' . ':difficulty';
-            $haveDifficulty = true;
-        }
-        if (!empty ($_POST['source'])) // si une region à été choisie
-        {
-            $where[] = ' MO_Nom = ' . ':source';
-            $haveSource = true;
-        }
-        if (!empty ($_POST['extension'])) // si une region à été choisie
-        {
-            $where[] = ' ME_Nom = ' . ':extension';
-            $haveExtension = true;
-        }
-        if (!empty ($_POST['faction'])) // si une region à été choisie
-        {
-            $where[] = ' MFA_Nom = ' . ':faction';
-            $haveFaction = true;
-        }
-        if (!empty ($_POST['type'])) // si une region à été choisie
-        {
-            $where[] = ' MTY_Nom = ' . ':type';
-            $haveType = true;
-        }
+        // if (!empty ($_POST['difficulty'])) // si une region à été choisie
+        // {
+        //     $where[] = ' MDI_Nom = ' . ':difficulty';
+        //     $haveDifficulty = true;
+        // }
+        // if (!empty ($_POST['source'])) // si une region à été choisie
+        // {
+        //     $where[] = ' MO_Nom = ' . ':source';
+        //     $haveSource = true;
+        // }
+        // if (!empty ($_POST['extension'])) // si une region à été choisie
+        // {
+        //     $where[] = ' ME_Nom = ' . ':extension';
+        //     $haveExtension = true;
+        // }
+        // if (!empty ($_POST['faction'])) // si une region à été choisie
+        // {
+        //     $where[] = ' MFA_Nom = ' . ':faction';
+        //     $haveFaction = true;
+        // }
+        // if (!empty ($_POST['type'])) // si une region à été choisie
+        // {
+        //     $where[] = ' MTY_Nom = ' . ':type';
+        //     $haveType = true;
+        // }
+    
 
 
 
-
-        if (isset ($where)) {
-            $sqlQuery .= " WHERE " . implode(' AND ', $where);
-        }
-
+        // if (isset ($where)) {
+        //     $sqlQuery .= " WHERE " . implode(' AND ', $where);
+        // }
+    
 
 
         // Godefroy
@@ -281,22 +428,22 @@ include "auth-mount-equip.php";
         // Les IFs sont basiques, on peut les mettre chacun sur une ligne 
         // pour que ça soit plus facile à comprendre/lire
         $sth = $dbco->prepare($sqlQuery);
-        if ($haveFaction) {
-            $sth->bindParam(':faction', $faction, PDO::PARAM_STR);
-        }
-        if ($haveExtension) {
-            $sth->bindParam(':extension', $extension, PDO::PARAM_STR);
-        }
-        if ($haveSource) {
-            $sth->bindParam(':source', $source, PDO::PARAM_STR);
-        }
-        if ($haveDifficulty) {
-            $sth->bindParam(':difficulty', $difficulty, PDO::PARAM_STR);
-        }
-        if ($haveType) {
-            $sth->bindParam(':type', $type, PDO::PARAM_STR);
-        }
-
+        // if ($haveFaction) {
+        //     $sth->bindParam(':faction', $faction, PDO::PARAM_STR);
+        // }
+        // if ($haveExtension) {
+        //     $sth->bindParam(':extension', $extension, PDO::PARAM_STR);
+        // }
+        // if ($haveSource) {
+        //     $sth->bindParam(':source', $source, PDO::PARAM_STR);
+        // }
+        // if ($haveDifficulty) {
+        //     $sth->bindParam(':difficulty', $difficulty, PDO::PARAM_STR);
+        // }
+        // if ($haveType) {
+        //     $sth->bindParam(':type', $type, PDO::PARAM_STR);
+        // }
+    
         $sth->execute();
 
         //On affiche les infos de la table
