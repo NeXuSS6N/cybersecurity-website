@@ -33,10 +33,10 @@
         <!-- Login -->
         <div class="loginConteneur">
             <div class="loginhtml">
-                <div class="loginbutton ombre backgroundBlanc itemcenter">
+                <!-- <div class="loginbutton ombre backgroundBlanc itemcenter">
                     <input id="tab-signin" type="radio" name="tab" class="login" checked onclick="hide_register()">
                     <label for="tab-signin" class="tab">Sign In</label>
-                </div>
+                </div> -->
                 <div class="registerbutton ombre backgroundBlanc itemcenter">
                     <input id="tab-signup" type="radio" name="tab" class="register" onclick="hide_login()">
                     <label for="tab-signup" class="tab">Sign Up</label>
