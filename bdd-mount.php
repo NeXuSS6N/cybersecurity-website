@@ -7,9 +7,9 @@ $password = '';
 /* On ferme la connexion */
 $conn = null;
 
-if(isset($_SESSION["Loggedin"])){
+if (isset ($_SESSION["Loggedin"])) {
     $userpseudo = $_SESSION['Loggedin'];
-}else{
+} else {
     session_destroy();
 }
 include "auth-mount-equip.php";
@@ -22,7 +22,7 @@ include "auth-mount-equip.php";
 
     <link rel="icon" type="image/x-icon" href="./Assets/icon.png" />
     <meta charset="utf-8" />
-    <title>WoW Collection</title>
+    <title>Atara</title>
 
 
     <!-- Footer -->
@@ -67,17 +67,17 @@ include "auth-mount-equip.php";
                     <li><a href="./bdd-mount.php">Montures </a></li>
                     <li><a href="./equipements.php">Equipements</a></li>
                     <li>
-                        <?php 
-                            if(isset($_SESSION['Loggedin'])){
-                                echo '<a href="./MonCompte.php">' .$userpseudo.'</a>';
-                            }else{
-                                echo '<a href="./login.php">Mon compte</button></a>';
-                            }
+                        <?php
+                        if (isset ($_SESSION['Loggedin'])) {
+                            echo '<a href="./MonCompte.php">' . $userpseudo . '</a>';
+                        } else {
+                            echo '<a href="./login.php">Mon compte</button></a>';
+                        }
                         ?>
                     </li>
                     <li>
-                        <?php 
-                        if(isset($_SESSION['Loggedin'])){
+                        <?php
+                        if (isset ($_SESSION['Loggedin'])) {
                             echo '<a href="./PHP/Login/logout.php"><button class="login" type="button">Logout</button></a>';
                         } else {
                             echo '<a href="./login.php"><button class="login" type="button">Login</button></a>';
