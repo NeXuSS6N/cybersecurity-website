@@ -278,41 +278,158 @@ include "auth-mount-equip.php";
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="trois">Les données sont-elles stockées à 3 endroits différents ?
                     </label>
-                    <select name="renew">
+                    <select name="trois">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="local"> Le serveur, les sauvegardes, les équipements de réseau sont-ils protégés dans un
+                        local fermé et climatisé ?
                     </label>
-                    <select name="renew">
+                    <select name="local">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="nouveau"> Avez-vous une réglementation pour l’installation de tout nouveau matériel ?
                     </label>
-                    <select name="renew">
+                    <select name="nouveau">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="antivirus">Existe-t-il un Antivirus sur le matériel physique (PC, Serveurs,...)?
                     </label>
-                    <select name="renew">
+                    <select name="antivirus">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="regular">Est-il mis à jour régulièrement ?
                     </label>
-                    <select name="renew">
+                    <select name="regular">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="logiciel">Les logiciels mis à jour par votre entreprise sont-ils mis à jour
+                        régulièrement
+                        ?
+                    </label>
+                    <select name="logiciel">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="inventaire">Avez-vous procédé a un inventaire des OS & logiciels installés sur le
+                        matériel
+                        de l’entreprise ?
+                    </label>
+                    <select name="inventaire">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="regle">Avez-vous une réglementation pour l’installation de tout nouveau logiciel?
+                    </label>
+                    <select name="regle">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="wifi">Avez-vous un WiFi d’entreprise ?
+                    </label>
+                    <select name="wifi">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="invite">Avez-vous un un WiFi invité ?
+                    </label>
+                    <select name="invite">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="accesunique">Est-ce un accès unique (avec mot de passe ?)
+                    </label>
+                    <select name="accesunique">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="auth">Un accès avec authentification ? (voucher, code d’accès temporaire, ..)
+                    </label>
+                    <select name="auth">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="ethernet">Avez-vous un réseau Ethernet ?
+                    </label>
+                    <select name="ethernet">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="sensible">Avez-vous des données sensibles ? (médicales, défenses, militaires)
+                    </label>
+                    <select name="sensible">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="vlan">Avez-vous un réseau segmenté en VLANs ?
+                    </label>
+                    <select name="vlan">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="dmz">Avec-vous une DMZ ?
+                    </label>
+                    <select name="dmz">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="waf"> Avez-vous mis en place un WAF ?
+                    </label>
+                    <select name="waf">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="adressage">Le plan d’adressage est-il tenu à jour ?
+                    </label>
+                    <select name="adressage">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="ids">Etes-vous équipé d’un Système de Détection d’Intrusion (IDS)?
+                    </label>
+                    <select name="ids">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
