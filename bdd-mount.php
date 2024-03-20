@@ -339,109 +339,123 @@ include "auth-mount-equip.php";
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="logiciel">Avez-vous une réglementation pour l’installation de tout nouveau logiciel?
-                    </label>
-                    <select name="logiciel">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                    <<<<<<< HEAD <label for="logiciel">Avez-vous une réglementation pour l’installation de tout nouveau
+                        logiciel?
+                        </label>
+                        <select name="logiciel">
+                            =======
+                            <label for="regle">Avez-vous une réglementation pour l’installation de tout nouveau
+                                logiciel?
+                            </label>
+                            <select name="regle">
+                                >>>>>>> 5b0f9a4a3eb6e61289b3d3970dd29c62b13f6d9c
+                                <option value=""></option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                            </select>
 
-                    <label for="wifi">Avez-vous un WiFi d’entreprise ?
-                    </label>
-                    <select name="wifi">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                            <label for="wifi">Avez-vous un WiFi d’entreprise ?
+                            </label>
+                            <select name="wifi">
+                                <option value=""></option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                            </select>
 
-                    <label for="invite">Avez-vous un un WiFi invité ?
-                    </label>
-                    <select name="invite">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                            <label for="invite">Avez-vous un un WiFi invité ?
+                            </label>
+                            <select name="invite">
+                                <option value=""></option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                            </select>
 
-                    <label for="unique">Est-ce un accès unique (avec mot de passe ?)
-                    </label>
-                    <select name="unique">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                            <<<<<<< HEAD <label for="unique">Est-ce un accès unique (avec mot de passe ?)
+                                </label>
+                                <select name="unique">
+                                    =======
+                                    <label for="accesunique">Est-ce un accès unique (avec mot de passe ?)
+                                    </label>
+                                    <select name="accesunique">
+                                        >>>>>>> 5b0f9a4a3eb6e61289b3d3970dd29c62b13f6d9c
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="auth">Un accès avec authentification ? (voucher, code d’accès temporaire, ..)
-                    </label>
-                    <select name="auth">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="auth">Un accès avec authentification ? (voucher, code d’accès
+                                        temporaire, ..)
+                                    </label>
+                                    <select name="auth">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="ethernet">Avez-vous un réseau Ethernet ?
-                    </label>
-                    <select name="ethernet">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="ethernet">Avez-vous un réseau Ethernet ?
+                                    </label>
+                                    <select name="ethernet">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="sensible">Avez-vous des données sensibles ? (médicales, défenses, militaires)
-                    </label>
-                    <select name="sensible">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="sensible">Avez-vous des données sensibles ? (médicales, défenses,
+                                        militaires)
+                                    </label>
+                                    <select name="sensible">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="vlan">Avez-vous un réseau segmenté en VLANs ?
-                    </label>
-                    <select name="vlan">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="vlan">Avez-vous un réseau segmenté en VLANs ?
+                                    </label>
+                                    <select name="vlan">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="dmz">Avec-vous une DMZ ?
-                    </label>
-                    <select name="dmz">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="dmz">Avec-vous une DMZ ?
+                                    </label>
+                                    <select name="dmz">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="waf">Avez-vous mis en place un WAF ?
-                    </label>
-                    <select name="waf">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="waf">Avez-vous mis en place un WAF ?
+                                    </label>
+                                    <select name="waf">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="adressage">Le plan d’adressage est-il tenu à jour ?
-                    </label>
-                    <select name="adressage">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
+                                    <label for="adressage">Le plan d’adressage est-il tenu à jour ?
+                                    </label>
+                                    <select name="adressage">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
-                    <label for="ids">Etes-vous équipé d’un Système de Détection d’Intrusion (IDS)?
-                    </label>
-                    <select name="ids">
-                        <option value=""></option>
-                        <option value="Oui">Oui</option>
-                        <option value="Non">Non</option>
-                    </select>
-
-
-
+                                    <label for="ids">Etes-vous équipé d’un Système de Détection d’Intrusion (IDS)?
+                                    </label>
+                                    <select name="ids">
+                                        <option value=""></option>
+                                        <option value="Oui">Oui</option>
+                                        <option value="Non">Non</option>
+                                    </select>
 
 
-                    <div>
-                        <input type="submit" value="Rechercher" name="submit">
-                    </div>
+
+
+
+                                    <div>
+                                        <input type="submit" value="Rechercher" name="submit">
+                                    </div>
                 </div>
 
 
