@@ -162,7 +162,7 @@ if (isset ($_SESSION["Loggedin"])) {
                         class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Page d'accueil</a></li>
+                <li class="list-inline-item"><a href="./index.php">Page d'accueil</a></li>
                 <li class="list-inline-item"><a href="./equipements.php">L'équipe Atara</a></li>
                 <li class="list-inline-item"><a href="#">Paramètres et politique de cookies</a></li>
                 <li class="list-inline-item"><a href="#">Mentions légales</a></li>

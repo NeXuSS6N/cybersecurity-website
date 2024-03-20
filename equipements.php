@@ -67,9 +67,68 @@ include "auth-mount-equip.php";
                 </ul>
 
             </nav>
+        </header>
 
+        <div class="team-section">
+            <h2>Notre équipe</h2>
 
+            <div class="team-member">
+                <img src="./Assets/team-member1.jpg" alt="Team Member 1" />
+                <h3>Anaïs</h3>
+                <p>Développeur</p>
 
+            </div>
+            <div class="team-member">
+                <img src="./Assets/team-member2.jpg" alt="Team Member 2" />
+                <h3>Ruben</h3>
+                <p>Développeur</p>
+
+            </div>
+
+            <div class="team-member">
+                <img src="./Assets/team-member3.jpg" alt="Team Member 3" />
+                <h3>Philippe Casier</h3>
+                <p>Proxénète</p>
+
+            </div>
+
+            <div class="team-member">
+                <img src="./Assets/team-member4.jpg" alt="Team Member 4" />
+                <h3>Philippe</h3>
+                <p>Architecte réseaux</p>
+
+            </div>
+
+            <div class="team-member">
+                <img src="./Assets/team-member5.jpg" alt="Team Member 5" />
+                <h3>Philippe</h3>
+                <p>Commercial CESI France</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-facebook"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="./index.php">Page d'accueil</a></li>
+                    <li class="list-inline-item"><a href="./equipements.php">L'équipe Atara</a></li>
+                    <li class="list-inline-item"><a href="#">Paramètres et politique de cookies</a></li>
+                    <li class="list-inline-item"><a href="#">Mentions légales</a></li>
+                    <li class="list-inline-item"><a href="#">Confidentialité en ligne</a></li>
+                </ul>
+                <p class="copyright">Atara © 2024</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+        </script>
 
 </body>
 
