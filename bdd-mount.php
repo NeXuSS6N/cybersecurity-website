@@ -278,41 +278,70 @@ include "auth-mount-equip.php";
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="trois">Les données sont-elles stockées à 3 endroits différents ?
                     </label>
-                    <select name="renew">
+                    <select name="trois">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="local"> Le serveur, les sauvegardes, les équipements de réseau sont-ils protégés dans un
+                        local fermé et climatisé ?
                     </label>
-                    <select name="renew">
+                    <select name="local">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="nouveau"> Avez-vous une réglementation pour l’installation de tout nouveau matériel ?
                     </label>
-                    <select name="renew">
+                    <select name="nouveau">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="antivirus">Existe-t-il un Antivirus sur le matériel physique (PC, Serveurs,...)?
                     </label>
-                    <select name="renew">
+                    <select name="antivirus">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
                     </select>
 
-                    <label for="renew">Le matériel informatique des utilisateurs est-il renouvelé régulièrement ?
+                    <label for="regular">Est-il mis à jour régulièrement ?
                     </label>
-                    <select name="renew">
+                    <select name="regular">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="logiciel">Les logiciels mis à jour par votre entreprise sont-ils mis à jour
+                        régulièrement
+                        ?
+                    </label>
+                    <select name="logiciel">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="inventaire">Avez-vous procédé a un inventaire des OS & logiciels installés sur le
+                        matériel
+                        de l’entreprise ?
+                    </label>
+                    <select name="inventaire">
+                        <option value=""></option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+
+                    <label for="regular">Est-il mis à jour régulièrement ?
+                    </label>
+                    <select name="regular">
                         <option value=""></option>
                         <option value="Oui">Oui</option>
                         <option value="Non">Non</option>
